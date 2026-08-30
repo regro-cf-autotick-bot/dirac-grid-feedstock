@@ -38,7 +38,9 @@ outputs:
 
     tests:
       - python:
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
           imports:
             - DIRACCommon
           pip_check: true
@@ -307,7 +309,9 @@ outputs:
 
     tests:
       - python:
-          python_version: ${{ python_min }}.*
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
           imports:
             - DIRAC
           pip_check: true
